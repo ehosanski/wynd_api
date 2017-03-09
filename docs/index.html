@@ -1,7 +1,54 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Release Note</title>
+  <link rel="stylesheet" href="http://app.classeur.io/base-min.css" />
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="export-container"><h1 id="release-note-api-🚀">Release Note <strong>API 🚀</strong></h1>
+<p><code>09/03/2017</code><br>
+<code>Emmanuel Hosanski</code></p>
+<h2 id="🌈--new">🌈  New</h2>
+<p><strong>Bookings</strong><br>
+Le système de réservation (avec gestion de ressource, des ouvertures, …)</p>
+<p><strong>Nouveau Swagger</strong><br>
+La nouvelle interface de documentation de l’API.</p>
+<p><strong>Nouvelles routes</strong></p>
+<ul>
+<li>la modification des commandes</li>
+<li>la gestion des destinations</li>
+<li>la gestion de tags (sur les entités, les produits, …)</li>
+<li>la génération du pdf de commande</li>
+</ul>
+<p><strong>Tests unitaires</strong><br>
+Des tests behat systématiques pour éviter les régressions.</p>
+<hr>
+<h2 id="✨-refactoring">✨ Refactoring</h2>
+<p><strong>Mise en place de bonnes pratiques</strong></p>
+<ul>
+<li>Une ressource = un CRUD (create, read, update, delete)</li>
+<li>Nommage homogène des routes</li>
+<li>Optimisation de la gestion des objets liés (pour éviter les retours à rallonge)</li>
+<li>Gestion de la pagination (pour éviter les retours à rallonge et améliorer les temps de réponses)</li>
+</ul>
+<p><strong>Indexation des objets dans ElasticSearch</strong><br>
+Pour faciliter les tris et les filtres, quasiment toutes les entités (produits, clients, users, …) sont désormais indexés dans ElasticSearch</p>
+<p><strong>Ajout  de la version dans le retour de la route Authorization</strong><br>
+Pour faciliter la gestion sur Android, la version de l’API est désormais retournée dans le retour de la route d’Authorization</p>
+<hr>
+<h2 id="🚑-bug-fixes">🚑 Bug fixes</h2>
+<p><strong>Gestion des produits composés</strong></p>
+<hr>
+<h2 id="🔭-ca-arrive-bientôt...">🔭 Ca arrive bientôt…</h2>
+<p><strong>La migration des routes de WyndGescom (API de la caisse) dans WyndAPI (la nouvelle API)</strong></p>
+<p><strong>Le price center sur WyndAPI</strong></p>
+<p><strong>Le discount center sur WyndAPI</strong></p></div>
 </body>
+
 </html>
+
